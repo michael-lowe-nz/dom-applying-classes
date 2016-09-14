@@ -8,6 +8,7 @@ function start () {
   one()
   two();
   three();
+  makeVisible();
 
   // Your turn! Create a new function called `two`, then call it from here.
 }
@@ -31,3 +32,7 @@ function three () {
   three.classList.add("orange-gradient");
 }
 // CREATE FUNCTION makeVisible HERE
+function makeVisible() {
+  var invisibles = document.getElementsByClassName("invisible");
+  invisibles[0].classList.add("visible");
+}
